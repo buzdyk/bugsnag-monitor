@@ -79,7 +79,6 @@ func GetTrends(projectID string, since string, resolution string) ([]Trend, erro
 
 func request(endpoint string) ([]byte, error) {
 	authToken := "xxx"
-
 	url := "https://api.bugsnag.com" + endpoint
 
 	req, err := http.NewRequest("GET", url, nil)
